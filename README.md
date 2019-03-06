@@ -1,9 +1,11 @@
 # List_inArraySlots
 
-##Tanvir Ahmed and Oliver Cai
+## Tanvir Ahmed and Oliver Cai
 
-######Fields
+###### Fields
 
-#######Constructors
+###### Constructors
 
-#######Methods
+###### Methods
+
+###### Remarks
