@@ -6,19 +6,25 @@
 public class List_inArraySlots {
 
     // declare fields here
-
+    public int[] intHolder;
+    public int[] extraHolder;
     /**
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
+    	intHolder = new int[10];
     }
 
 
     /** 
       @return the number of elements in this list
      */
-    // public int size() {
-    // }
+    public int size() {
+	int length = 0;
+	for(int element : intHolder){
+	if(element != null) length ++;
+	}
+    }
 
 
      /** 
