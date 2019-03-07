@@ -67,7 +67,7 @@ public class List_inArraySlots {
         for(int index = 0; index < size; index ++){
           intHolder[index] = extraHolder[index];
         }
-         System.out.println( "expand... (for debugging)");
+         //System.out.println( "expand... (for debugging)");
            // /* S.O.P. rules for debugging:
               // Working methods should be silent. But during 
               // development, the programmer must verify that 
