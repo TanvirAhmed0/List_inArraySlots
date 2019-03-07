@@ -11,13 +11,13 @@ public class UserOfList {
         // /* Populate the list with elements, but with a small enough
            // number that we expect no invocation of expand().
         // */
-        // int i = 0;
-        // for( ; i < 5; i++ ) {
-            // list.add( -i); // differs from index, but similar
-            // System.out.println( "number of elements: " + list.size() );
-        // }
-        // System.out.println("initial population of " + list.size() + " elements:");
-        // System.out.println( list);
+        int i = 0;
+        for( ; i < 5; i++ ) {
+            list.add( -i); // differs from index, but similar
+            System.out.println( "number of elements: " + list.size() );
+         }
+        System.out.println("initial population of " + list.size() + " elements:");
+        System.out.println( list);
         
         // // Add enough elements that expansion is expected
         // for( ; i < 15; i++ ) {

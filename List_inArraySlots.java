@@ -45,11 +45,11 @@ public class List_inArraySlots {
       @return true, in keeping with conventions yet to be discussed
      */
      public boolean add( int value) {
+      size++;
       if(size == intHolder.length){
         expand();
       } 
         intHolder[size - 1] = value;
-      size++;
       return true;
      }
 
