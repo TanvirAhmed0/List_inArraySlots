@@ -13,7 +13,7 @@ public class List_inArraySlots {
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
-      intHolder = new String[10];
+      intHolder = new int[10];
       size = 0;
     }
 
@@ -32,10 +32,8 @@ public class List_inArraySlots {
       */ 
     public String toString() {
         String finalString = "[";
-        for(String element : intHolder) {
-            if (element != null) 
-                finalString += ", " + element;
-        }
+        for(int counter = 0; counter < size; counter ++) 
+            finalString += Integer.toString(intHolder[counter]) + ", ";
         finalString += "]";
         return finalString;
     }
