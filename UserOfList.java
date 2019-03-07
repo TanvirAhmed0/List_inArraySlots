@@ -6,7 +6,7 @@ public class UserOfList {
         List_inArraySlots list = new List_inArraySlots();
 
         // System.out.println( "number of elements: " + list.size() );
-        // System.out.println( "empty list:" + list);
+        System.out.println( "empty list:" + list);
 
         // /* Populate the list with elements, but with a small enough
            // number that we expect no invocation of expand().
