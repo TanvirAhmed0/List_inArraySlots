@@ -20,10 +20,11 @@ public class List_inArraySlots {
       @return the number of elements in this list
      */
     public int size() {
-	int length = 0;
-	for(int element : intHolder){
-	if(element != null) length ++;
-	}
+	    int length = 0;
+	    for(int index = 0; index < intHolder.length; ++index){
+	        if(intHolder[index] == 0) length ++; 
+          }
+      return length;
     }
 
 
