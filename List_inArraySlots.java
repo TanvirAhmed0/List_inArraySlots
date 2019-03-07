@@ -8,33 +8,22 @@ public class List_inArraySlots {
     // declare fields here
     public String[] intHolder;
     public String[] extraHolder;
+    private int size;
     /**
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
-    	intHolder = new String[10];
+      intHolder = new String[10];
+      size = 0;
     }
 
 
     /** 
       @return the number of elements in this list
      */
-<<<<<<< HEAD
     public int size() {
-	    int length = 0;
-	    for(int index = 0; index < intHolder.length; ++index){
-	        if(intHolder[index] == 0) length ++; 
-          }
-      return length;
+      return size;
     }
-=======
-    // public int size() {
-	// int length = 0;
-	// for(int element : intHolder){
-	// if(element != null) length ++;
-	// }
-    // }
->>>>>>> 49108397dd0809b6c4b6a23de5acd17471194634
 
 
      /** 
@@ -57,8 +46,15 @@ public class List_inArraySlots {
       
       @return true, in keeping with conventions yet to be discussed
      */
-     // public boolean add( int value) {
-     // }
+     public boolean add( int value) {
+      if(size == intHolder.length){
+        intHolder.expand();
+      } 
+      else{
+        intHolder[size - 1] = value;
+      }
+      size++;
+     }
 
 
     /** 
