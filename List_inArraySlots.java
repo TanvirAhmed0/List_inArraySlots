@@ -6,8 +6,8 @@
 public class List_inArraySlots {
 
     // declare fields here
-    public String[] intHolder;
-    public String[] extraHolder;
+    public int[] intHolder;
+    public int[] extraHolder;
     private int size;
     /**
       Construct an empty list with a small initial capacity.
@@ -48,12 +48,13 @@ public class List_inArraySlots {
      */
      public boolean add( int value) {
       if(size == intHolder.length){
-        intHolder.expand();
+        expand();
       } 
       else{
         intHolder[size - 1] = value;
       }
       size++;
+      return true;
      }
 
 
@@ -61,13 +62,14 @@ public class List_inArraySlots {
       Double the capacity of the List_inArraySlots, 
       preserving existing data
      */
-     // private void expand() {
-        // System.out.println( "expand... (for debugging)");
+      private void expand() {
+
+         System.out.println( "expand... (for debugging)");
            // /* S.O.P. rules for debugging:
               // Working methods should be silent. But during 
               // development, the programmer must verify that 
               // this method is called when that is appropriate.
               // So test using the println(), then comment it out.
               // */
-     // }
+      }
 }
