@@ -6,8 +6,8 @@
 public class List_inArraySlots {
 
     // declare fields here
-    public int[] intHolder;
-    public int[] extraHolder;
+    private int[] intHolder;
+    private int[] extraHolder;
     private int size;
     /**
       Construct an empty list with a small initial capacity.
