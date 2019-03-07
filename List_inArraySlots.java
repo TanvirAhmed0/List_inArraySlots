@@ -48,9 +48,7 @@ public class List_inArraySlots {
       if(size == intHolder.length){
         expand();
       } 
-      else{
         intHolder[size - 1] = value;
-      }
       size++;
       return true;
      }
@@ -61,7 +59,14 @@ public class List_inArraySlots {
       preserving existing data
      */
       private void expand() {
-
+        extraHolder = new int[size];
+        for(int index = 0; index < size; index ++){
+            extraHolder[index] = intHolder[index];
+          }
+        intHolder = new int[size + 10];
+        for(int index = 0; index < size; index ++){
+          intHolder[index] = extraHolder[index];
+        }
          System.out.println( "expand... (for debugging)");
            // /* S.O.P. rules for debugging:
               // Working methods should be silent. But during 
