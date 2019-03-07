@@ -33,7 +33,7 @@ public class List_inArraySlots {
     public String toString() {
         String finalString = "[";
         for(int counter = 0; counter < size; counter ++) 
-            finalString += Integer.toString(intHolder[counter]) + ", ";
+            finalString += Integer.toString(intHolder[counter]) + ",";
         finalString += "]";
         return finalString;
     }
