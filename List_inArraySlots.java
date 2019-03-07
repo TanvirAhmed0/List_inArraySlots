@@ -6,33 +6,40 @@
 public class List_inArraySlots {
 
     // declare fields here
-    public int[] intHolder;
-    public int[] extraHolder;
+    public String[] intHolder;
+    public String[] extraHolder;
     /**
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
-    	intHolder = new int[10];
+    	intHolder = new String[10];
     }
 
 
     /** 
       @return the number of elements in this list
      */
-    public int size() {
-	int length = 0;
-	for(int element : intHolder){
-	if(element != null) length ++;
-	}
-    }
+    // public int size() {
+	// int length = 0;
+	// for(int element : intHolder){
+	// if(element != null) length ++;
+	// }
+    // }
 
 
      /** 
        @return a string representation of this list,
        in [a,b,c,] format
       */ 
-    // public String toString() {
-    // }
+    public String toString() {
+        String finalString = "[";
+        for(String element : intHolder) {
+            if (element != null) 
+                finalString += ", " + element;
+        }
+        finalString += "]";
+        return finalString;
+    }
 
     
     /** 
