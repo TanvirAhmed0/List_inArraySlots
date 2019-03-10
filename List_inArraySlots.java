@@ -7,7 +7,6 @@ public class List_inArraySlots {
 
     // declare fields here
     private int[] intHolder;
-    //private int[] extraHolder;
     private int size;
     /**
       Construct an empty list with a small initial capacity.
@@ -130,16 +129,9 @@ public class List_inArraySlots {
       remove(index, size);
       size --;
       return removedInt;
-      //   int targetValue = intHolder[index];
-      //   for(int targetIndex = size - 1; targetIndex > index; targetIndex --){
-      //     set(targetIndex, intHolder[targetIndex + 1]);
-      // }
-      //   set(index, 0);
-      //   size --;
-      //   return targetValue;
      }
 
-    public void remove(int index, int size){
+    private void remove(int index, int size){
       if(index == size - 1){
         //System.out.println("Replacing " + intHolder[index] + " with "  + 0);
         set(index, size);
