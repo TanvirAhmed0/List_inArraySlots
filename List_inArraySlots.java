@@ -146,4 +146,8 @@ public class List_inArraySlots {
         set(size - 2, intHolder[size - 1]);
       } 
     }
+
+    public void addAsHead(int value){
+      add(0,value);
+    }
 }
